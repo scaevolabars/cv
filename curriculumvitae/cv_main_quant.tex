@@ -1,0 +1,187 @@
+\documentclass{article}
+
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{fontspec}
+\usepackage{geometry}
+ \geometry{
+	a4paper,
+	total={190mm,287mm},
+	left=10mm,
+	right=10mm,
+	top=5mm,
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\datedsection}[2]{%
+	\section[#1]{#1 \hfill #2}%
+}
+\newcommand{\datedsubsection}[2]{%
+	\subsection[#1]{#1 \hfill #2}%
+}
+
+\newcommand{\datedsubsubsection}[2]{%
+	\subsubsection[#1]{#1 \hfill #2}%
+}
+
+\newcommand{\name}[1]{%
+	\centerline{\Huge{#1}}
+}
+
+
+\newcommand\contact[5]{%
+	\centerline{%
+		\makebox[0pt][c]{%
+			#1 {\large\textperiodcentered} #2 {\large\textperiodcentered} #3 {\large\textperiodcentered}
+		\newline #4%
+		}%
+	}%
+}
+
+
+
+%%%%%%%%%%%%%Section%%%%%%%%%%%%%%%
+\titleformat{\section}
+{\LARGE\scshape\lowercase}
+{}
+{0em}
+{}[\titlerule]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%Subsection%%%%%%%%%%%%
+
+\titleformat{\subsection}[runin]
+{\large\bfseries\scshape}
+{}
+{0em}
+{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%Subsubsection%%%%%%%%%%%
+
+\titleformat{\subsubsection}[runin]
+{\bfseries}
+{}
+{0em}
+{}
+
+\titlespacing{\subsubsection}
+{0em}{0em}{2mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%Title%%%%%%%%%%%%%%%%%%
+\renewcommand{\maketitle}{
+\begin{center}
+{\bfseries\Huge\theauthor}
+\vspace{0.25em}
+
+\contact{Moscow}{sergey.barseghyan06@gmail.com}{barseghyan@phystech.edu}{+7(916) 511-99-96}{}
+\end{center}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{document}
+\title{R\'esum\'e}
+
+\author{Sergey Barseghyan}
+\maketitle
+
+
+\section{Employment}
+\datedsubsection{T-Digital}{2021--Now}
+\subsubsection{Quantitative Researcher}
+\begin{itemize}
+	\item research and trading strategy development
+	\end{itemize}
+
+
+\datedsubsection{Beta Financial Technologies LLC}{2020--2021}
+\subsubsection{Quantitative Analyst}
+\begin{itemize}
+	\item developed two indices with dynamical, machine learning based, basket selection, back-testing, statistical modeling, index platform infrastructure setup, pricing structured products, interviewing candidates.
+\end{itemize}
+
+\datedsubsection{ThunderBid Trading Limited }{2019--2019}
+\subsubsection{Quantitative Research Intern}
+\begin{itemize}
+	\item trading robot features development and back-testing.
+\end{itemize}
+
+\datedsubsection{MIPT Scientific and Academic Career Cluster}{2020--Now}
+\subsubsection{Teaching Assistant} Teaching Python and Computer Science basics to freshman students.
+
+\section{Awards and Achievements}
+\datedsubsubsection{Trinity College Firefighting Robot Competition, 
+	Hartford, Connecticut, USA}{}
+\begin{itemize}
+	\item (top 5 out of 200 competing teams and prize for best design)
+	\end{itemize}
+\datedsubsubsection{ArmRobotics Linetracking Robot Competition (First Prize), Yerevan, Armenia}{}
+\datedsubsubsection{Winner of Republican Olympiad in Mathematics and Physics, Yerevan, Armenia}{}
+
+\section{Education} 
+\datedsubsection{Bachelor}{class of 2020} (GPA 4.85/5)
+\subsubsection{Moscow Institute of Physics and Technology - Landau School of Physics and Research}
+
+\begin{itemize}
+	\item As part of the elite theory group conducted research on different aspects of quantum field theory, mainly on quantum effects in strongly curved space-time, regularly reporting on scientific seminar.  
+	\item Worked as researcher in Laboratory of High Energy Physics, MIPT
+
+\end{itemize}
+
+\datedsubsection{Masters }{class of 2022}
+\subsubsection{Moscow Institute of Physics and Technology - Landau School of Physics and Research}
+
+\begin{itemize}
+	\item Working on mathematical aspects of matrix models and mentoring first year students.
+
+\end{itemize}
+
+\section{Schools}
+\begin{itemize}
+	\item \textbf{Black Sea School on new developments in mathematical finance}
+	\item \textbf{Center for Mathematical Finance}
+	\begin{itemize}
+		\item Extensive classes on financial mathematics, stochastic calculus, derivatives and machine leaning applications in finance, analogous to CQF. Projects included exotics pricing and algorithmic trading (Hidden Markov Model based trading strategy development). 
+		
+	\end{itemize}
+
+	\item \textbf{Advanced Methods of Modern Theoretical Physics Integrable and Stochastic Systems.}
+	\item \textbf{String theory, Integrable models and Representation theory}
+	\item \textbf{International School of Subnuclear Physics, Erice, Italy} - Reporter and Scientific Secretary
+	\item \textbf{Algebraic and Geometric Methods in Mathematical Physics} - Lecturer
+	
+	\item \textbf{Wolfram Summer School}
+	
+	
+	
+	\begin{itemize}
+		\item Developed basic Cellular Automata classifier problem using machine learning methods.
+		
+	\end{itemize}
+	
+\end{itemize}
+
+
+
+
+
+
+
+
+
+\section{Skills}
+\subsection{Programming}
+Python (Pandas, Numpy, SciPy, TF), C++, C, Vim, SQL, Mathematica, R, Unix, Fortran, Git, \LaTeX
+\subsection{Languages}
+English (Fluent), Russian (Native), Armenian (Native)
+
+\end{document}
